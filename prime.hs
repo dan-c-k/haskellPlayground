@@ -10,6 +10,6 @@ ldf k n | divides k n = k
         | otherwise = ldf (k+1) n
 
 prime0 :: Integer -> Bool
-prime0 n | n < 1 = error "not a positive integer"
+prime0 n | n < 1 = error "this was so fucking dumb"
          | n == 1 = False
          | otherwise = ld n == n

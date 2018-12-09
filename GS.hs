@@ -48,26 +48,7 @@ prefix (x:xs) (y:ys) = (x==y) && prefix xs ys
 factors :: Integer -> [Integer]
 factors n | n < 1     = error "argument not positive"
           | n == 1    = []
-          | otherwise = p : factors (div n p) where p = ld n
-
-primes0 :: [Integer]
-primes0 = filter prime0 [2..]    
-
-ldp :: Integer -> Integer
-ldp n = ldpf primes1 n
-
-ldpf :: [Integer] -> Integer -> Integer
-ldpf (p:ps) n | rem n p == 0 = p 
-              | p^2 > n      = n
-              | otherwise    = ldpf ps n
-
-primes1 :: [Integer]
-primes1 = 2 : filter prime [3..]
-
-prime :: Integer -> Bool
-prime n | n < 1     = error "not a positive integer"
-        | n == 1    = False 
-        | otherwise = ldp n == n
+          | otherwise = p : factors (div n p) where p = ld n 
 
 a = 3
 b = 4 
@@ -86,29 +67,39 @@ h2 :: Integer -> Integer
 h2 0 = 0
 h2 x = h2 (x+1) 
 
-removeFst :: Integer -> [Int] -> [Int]
+removeFst :: Int -> [Int] -> [Int]
 removeFst m [] = []
 removeFst m (x:xs) 
   | x == m = xs
   | otherwise = x : removeFst m xs 
 
 srtInts :: [Int] -> [Int]
-stInts [] = []
-strInts xs = m : (srtInts (removeFst m xs)) where m = mnmInt xs 
+srtInts [] = []
+strInts xs = m : (srtInts (removeFst m xs)) where m = (mnmInt xs)
 
 srtInts' :: [Int] -> [Int]
 srtInts' [] = []
-srtInts' xs =
-    let
-        m == mnmInt xs
-    in m: (srtInts' (removeFst m xs))
+srtInts' xs = 
+    let m = (mnmInt xs )
+    in m : (srtInts' (removeFst m xs))
 
 countChar :: Char -> String -> Int
 countChar ch [] = 0
 countChar ch (c:cs)
   | ch == c = 1 + (countChar ch cs)
   | otherwise = 0 + (countChar ch cs)
+
+multString :: Integer -> Char -> [Char]
+multString n c
+  | n == 0 = []
+  | otherwise = c : (multString (n - 1) c)
+
+blowupHelper :: Integer -> [Char] -> [Char]
+blowupHelper n [] = []
+blowupHelper n (x:xs) = (multString n x) ++ (blowupHelper (n + 1) xs)
               
+blowup :: String -> String
+blowup str = blowupHelper 1 str
 
 
 

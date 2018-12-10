@@ -1,0 +1,22 @@
+Chapter 2 exercise
+
+(P eOR Q) eOR Q = P
+
+p  q   (p eOR q)  eOR q
+
+t  t      f        t
+t  f      t        t
+f  t      t        f 
+f  f      f        f
+
+difference between three stacked bars and <-->
+
+stacked bars means the two are logically equivilant
+
+<--> is anothe formular that says
+
+the formula only holds if stacked bars
+
+
+
+

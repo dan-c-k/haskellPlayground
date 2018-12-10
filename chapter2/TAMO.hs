@@ -73,6 +73,9 @@ formula4 p q = (p <+> q) <+> q
 
 formula5 p q = p <=> ((p <+> q) <+> q)
 
+forumla6 p q r = p ==> (q ==> r)
+formula7 p q r = q ==> (p ==> r)
+
 class TF p where 
   valid :: p -> Bool
   lequiv :: p -> p -> Bool
@@ -140,6 +143,4 @@ every xs p = all p xs
 some  xs p = any p xs
 
 -- 
-
-
 

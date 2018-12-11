@@ -17,6 +17,47 @@ stacked bars means the two are logically equivilant
 
 the formula only holds if stacked bars
 
+An open formula is a formula with one or more unbound variables
+in it
 
+Unrestricted and Restricted Quantifiers, Domain of Quantification Quantifiers
+can occur unrestricted: 8x(x > 0), 9y8x(y > x), and restricted: 8x 2 A(x > 0), 9y 2 B(y < a) (where A and B are sets).
+In the unrestricted case, there should be some domain of quantification that often
+is implicit in the context. E.g., if the context is real analysis, 8x may mean for all
+reals x. . . , and 8f may mean for all real-valued functions f. . . .
+
+Bound Variables. Quantifier expressions 8x, 9y,. . . (and their restricted companions)
+are said to bind every occurrence of x, y,. . . in their scope. If a variable
+occurs bound in a certain expression then the meaning of that expression does not
+change when all bound occurrences of that variable are replaced by another one.
+
+Bad Habits. It is not unusual to encounter our example-statement (2.1) displayed
+as follows.
+For all rationals x and y, if x < y, then both x < z and z < y hold
+for some rational z.
+Note that the meaning of this is not completely clear. With this expression the true
+statement that 8x; y2Q9z2Q(x < y ) (x < z ^ z < y)) could be meant, but
+what also could be meant is the false statement that 9z 2Q 8x; y 2Q (x < y ) (x < z ^ z < y)).
+
+UNIQUENESS
+The logical structure becomes more transparent if we write P for the property.
+This gives the following translation for ‘precisely one object has property P’:
+9x(Px ^ 8z(Pz ) z = x)):
+
+Often used notations are x 7! x2 and x:x2. The expression x:x2 is called a
+lambda term.
+
+One way to think about quantified expressions like 8xPx and 9yPy is as combinations
+of a quantifier expression 8 or 9 and a lambda term x:P x or y:P y.
+The lambda abstract x:P x denotes the property of being a P. The quantifier 8 is a function that maps properties to truth values according to the recipe: if the
+property holds of the whole domain then t, else f. The quantifier 9 is a function
+that maps properties to truth values according to the recipe: if the property holds
+of anything at all then t, else f. This perspective on quantification is the basis of
+the Haskell implementation of quantifiers in Section 2.8.
+
+f0; 1; 2; : : :g, then formula (2.5) expresses that n is a prime number.
+We can make the fact that the formula is meant as a definition explicit by introducing
+a predicate name P and linking that to the formula:4
+P(n) : n > 1 ^ 8m((1 < m < n) ) :mjn):
 
 

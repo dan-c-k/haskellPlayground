@@ -68,7 +68,29 @@ formula42 p q r = q ==> (p ==> r)
 -- 4 - True
 formula51 p q r = p ==> (q ==> r)
 formula52 p q r = (p ==> q) ==> r
--- 5 - 
--- 
+-- 5 - False
+-- SKIP
+
+--Exercise 2.21 
+--SKIP
+
+--Exercise 2.22 
+--SKIP
+
+--Exercise 2.23
+-- See Notes
+
+-- Exercise 2.26
+-- See Notes
+
+-- Exercise 2.27
+-- See Notes
+
+-- Example 2.30
+[ x | x <- list, property x ]
+
+-- [ 2^n + 1 | n <- [0..], prime (2^n + 1) ]
+-- [ 2^n + 1 | n <- [0..], not (prime (2^n + 1)) ]
+
 
 

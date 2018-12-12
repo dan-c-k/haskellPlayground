@@ -60,4 +60,30 @@ We can make the fact that the formula is meant as a definition explicit by intro
 a predicate name P and linking that to the formula:4
 P(n) : n > 1 ^ 8m((1 < m < n) ) :mjn):
 
+A logical formula is called (logically) valid if it turns out to be true in every
+structure.
+2. Formulas are (logically) equivalent if they obtain the same truth value in
+every structure (i.e., if there is no structure in which one of them is true and
+the other one is false)
+
+On the one hand, if you know that 9y8x(x; y) (which states that there is one
+y such that for all x, (x; y) holds) is true in a certain structure, then a fortiori
+8x9y(x; y) will be true as well (for each x, take this same y). However, if
+8x9y(x; y) holds, it is far from sure that 9y8x(x; y) holds as well.
+
+Restricted Quantifiers Explained. There is a version of Theorem 2.40 that employs
+restricted quantification. This version states, for instance, that :8x2A  is
+equivalent to 9x 2 A :, and so on. The equivalence follows immediately from
+the remark above. We now have, e.g., that :8x2A(x) is equivalent to :8x(x 2 A ) (x)), which in turn is equivalent to (Theorem 2.40) 9x:(x 2 A ) (x)),
+hence to (and here the implication turns into a conjunction — cf. Theorem 2.10)
+9x(x 2 A ^ :(x)), and, finally, to 9x2A:(x).
+
+Just as good naming conventions can make a program easier to understand, naming
+conventions can be helpful in mathematical writing. For instance: the letters
+n; m; k; : : : are often used for natural numbers, f; g; h; : : : usually indicate that
+functions are meant, etc.
+The interpretation of quantifiers in such a case requires that not one, but several
+domains are specified: one for every sort or type. Again, this is similar to providing
+explicit typing information in a functional program for easier human digestion.
+
 

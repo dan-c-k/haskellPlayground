@@ -1,0 +1,42 @@
+It turns out that proofs and implementations have many things in common. In the
+first place, variables are a key ingredient in both. Variables are used to denote
+members of certain sets.
+
+1 Write correct English, try to express yourself clearly.
+2 Make sure the reader knows exactly what you are up to.
+3 Say what you mean when introducing a variable.
+4 Don’t start a sentence with symbols; don’t write formulas only.
+5 Use words or phrases like ‘thus’, ‘therefore’, ‘hence’, ‘it follows that’,etc.
+to link up your formulas. Be relevant and succinct.
+6 When constructing proofs, use the following schema:
+Given: . . .
+To be proved:
+7 Use layout (in particular, indentation) to identify subproofs and to keep track
+of the scopes of assumptions.
+8 Look up definitions of defined notions, and use these definitions to re-write
+both Given and To be proved.
+9 Make sure you have a sufficient supply of scratch paper, make a fair copy of
+the end-product— whether you think it to be flawless or not.
+10 Ask yourself two things: Is this correct? Can others read it?
+
+As we go along, we will provide arguments that try to explain why a
+certain rule is safe.
+
+Given: . . .
+To be proved:  ) 	
+Proof:
+Suppose 
+To be proved: 	
+Proof: . . .
+Thus  ) 	.
+
+Given:  ) 	, 
+Thus 	.
+
+Advice. Beginners are often lured into using this rule. The given : that comes
+in free looks so inviting! However, many times it must be considered poisoned,
+making for a cluttered bunch of confused givens that you will not be able to disentangle.
+It is a killer rule that often will turn itself against its user, especially when
+that is a beginner. Proof by Contradiction should be considered your last way out.
+Some proof problems do need it, but if possible you should proceed without: you
+won’t get hurt and a simpler and more informative proof will result.

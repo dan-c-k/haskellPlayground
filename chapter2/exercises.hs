@@ -92,5 +92,15 @@ formula52 p q r = (p ==> q) ==> r
 -- [ 2^n + 1 | n <- [0..], prime (2^n + 1) ]
 -- [ 2^n + 1 | n <- [0..], not (prime (2^n + 1)) ]
 
+-- Exercise 2.51
+unique :: (a -> Bool) -> [a] -> Bool
+unique p a = length (filter p a) == 1
+
+evenNR :: (a-> Bool) -> [a] -> Bool
+evenNR p a = rem (length (filter p a)) 2 == 0
+
+
+
+
 
 

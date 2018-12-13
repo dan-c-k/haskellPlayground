@@ -1,9 +1,0 @@
--- exercise 2.15
-notValid1 :: (Bool -> Bool) -> Bool
-notValid1 bf = and [not (bf p | p <- [True,False])]
-
---Exercise 2.16
-1) The equation does not have a solution
-2) A largest natural number does exits
-3) The number 13 is not prime
-4) he number n is not prime

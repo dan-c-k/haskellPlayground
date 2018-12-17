@@ -40,3 +40,11 @@ It is a killer rule that often will turn itself against its user, especially whe
 that is a beginner. Proof by Contradiction should be considered your last way out.
 Some proof problems do need it, but if possible you should proceed without: you
 won’t get hurt and a simpler and more informative proof will result.
+
+Note that the rule for implication introduction can be used for reasoning by cases,
+as follows. Because P _ :P is a logical truth, it can always be added to the list of
+givens. If the two sub cases P and :P both yield conclusion Q, then this proves
+Q. Here is the schema:
+
+see 3.5 for the most useful set of intro notes
+    don't concentrate on transform, concentrate on form

@@ -48,3 +48,5 @@ Q. Here is the schema:
 
 see 3.5 for the most useful set of intro notes
     don't concentrate on transform, concentrate on form
+
+Sieve of Eratosthenes.

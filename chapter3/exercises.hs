@@ -10,4 +10,8 @@ ldpf (p:ps) m
 | p^2 > m = m
 | otherwise = ldpf ps m
 
-primes = 2 : filter prime [3..]
+-- primes = 2 : filter prime [3..] 
+
+
+examples = [take n primes | n <- [0..],
+                            not (prime (product (take n primes) + 1))]

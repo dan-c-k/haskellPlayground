@@ -1,0 +1,19 @@
+The Comprehension Principle. A set is a collection into a whole of definite, distinct
+objects of our intuition or of our thought. The objects are called the elements
+(members) of the set
+
+Principle of Extensionality. Sets that have the same elements are equal.
+
+the barber, bill,  shaves only those who don't shave themselves, clients
+
+who shaves bill?
+
+If the bill shaves himself, he is a client but can't barber
+
+If bill doesn't shave himself, he is a client but can't be
+
+Who shaves the barber?
+
+Sets A and B are called disjoint if A \ B = ;.
+
+The powerset of the setX is the set }(X) = fAjA  X g of all subsets of X

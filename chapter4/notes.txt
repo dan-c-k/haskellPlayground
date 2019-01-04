@@ -17,3 +17,20 @@ Who shaves the barber?
 Sets A and B are called disjoint if A \ B = ;.
 
 The powerset of the setX is the set }(X) = fAjA  X g of all subsets of X
+
+We say that a procedure diverges when it does not terminate or when it aborts with
+an error.
+
+In fact,
+Haskell has no way to distinguish between divergence and error abortion.
+
+Ord is the class of types of things which not only can be tested for equality and
+inequality, but also for order: in addition to == and /=, the relations < and <=
+are defined. Also, it has functions min for the minimal element and max for the
+maximal element. The class Ord is a subclass of the class Eq.:t 
+
+Extensionality is ...
+
+Sets A and B are called disjoint if A \ B = ;.
+
+the powerset of a set a is a set of all subsets of a

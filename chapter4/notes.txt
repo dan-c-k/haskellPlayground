@@ -31,6 +31,9 @@ maximal element. The class Ord is a subclass of the class Eq.:t
 
 Extensionality is ...
 
+leaving of at ordered pairs and products
+ 
+
 Sets A and B are called disjoint if A \ B = ;.
 
 the powerset of a set a is a set of all subsets of a

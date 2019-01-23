@@ -10,4 +10,6 @@ flip' :: (a -> b -> c) -> (b -> a -> c)
 flip' f = g
    where g x y = f y x
 
+-- $ is useful for applying to list of functions or for right chaining
+
    
